@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c5f7f2"
+    tools:context="com.example.deekshithamanjunath.assignment5.Filter">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/country_filter"
+        android:textSize="26sp"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="#0000FF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="231dp"
+        android:layout_marginTop="59dp"
+        android:id="@+id/filterCountry" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:textSize="26sp"
+        android:textColor="#0000FF"
+        android:ems="10"
+        android:id="@+id/filterYear"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/state_filter"
+        android:textSize="26sp"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="#0000FF"
+        android:layout_marginTop="41dp"
+        android:id="@+id/filterState"
+        android:layout_below="@+id/filterCountry"
+        android:layout_alignStart="@+id/filterCountry" />
+
+    <TextView
+        android:text="@string/joining_year_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:id="@+id/textView"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/filterState"
+        android:layout_alignStart="@+id/filterState" />
+
+    <Button
+        android:text="@string/done_filter"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/filterYear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:id="@+id/buttonFilterDone" />
+
+    <Button
+        android:text="@string/set_filter_state"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonFilterStateSet"
+        android:layout_alignTop="@+id/filterState"
+        android:layout_alignStart="@+id/buttonFilterCountrySet" />
+
+    <Button
+        android:text="@string/set_filter_country"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:id="@+id/buttonFilterCountrySet"
+        android:layout_alignTop="@+id/filterCountry"
+        android:layout_toEndOf="@+id/filterCountry" />
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.deekshithamanjunath.assignment5.RegisterActivity">
+
+
+    <Button
+        android:text="@string/register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRegistrationSubmit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/country_hint"
+        android:textColor="#000000"
+        android:enabled="false"
+        android:textSize="22sp"
+        android:ems="10"
+        android:id="@+id/countryName"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/passwordRegister"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:text="@string/state_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/countryName"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="37dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:hint="@string/state_hint"
+        android:enabled="false"
+        android:textSize="22sp"
+        android:ems="10"
+        android:id="@+id/stateName"
+        tools:ignore="LabelFor"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignStart="@+id/countryName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/city_hint"
+        android:textSize="22sp"
+        android:ems="10"
+        android:id="@+id/cityName"
+        tools:ignore="LabelFor"
+        android:layout_below="@+id/stateName"
+        android:layout_alignStart="@+id/stateName"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:text="@string/city_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignBaseline="@+id/buttonCity"
+        android:layout_alignBottom="@+id/buttonCity"
+        android:layout_alignStart="@+id/textView5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="@string/year_hint"
+        android:textSize="22sp"
+        android:id="@+id/year"
+        tools:ignore="LabelFor"
+        android:layout_below="@+id/buttonCity"
+        android:layout_alignStart="@+id/cityName"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:text="@string/year_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_alignBaseline="@+id/year"
+        android:layout_alignBottom="@+id/year"
+        android:layout_alignStart="@+id/textView6" />
+
+    <Button
+        android:text="@string/set_city"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCity"
+        android:layout_alignBottom="@+id/cityName"
+        android:layout_alignStart="@+id/buttonCountryState" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/nickname_hint"
+        android:textSize="22sp"
+        android:ems="10"
+        android:id="@+id/nickName"
+        tools:ignore="LabelFor"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/buttonRegistrationSubmit" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_hint"
+        android:textSize="22sp"
+        android:ems="10"
+        android:id="@+id/emailAddress"
+        tools:ignore="LabelFor"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/passwordRegister"
+        android:layout_alignStart="@+id/nickName" />
+
+    <TextView
+        android:text="@string/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/passwordRegister"
+        android:layout_alignBottom="@+id/passwordRegister"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:text="@string/e_mail_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/emailAddress"
+        android:layout_alignBottom="@+id/emailAddress"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="@string/nickname_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:id="@+id/textView"
+        android:layout_marginBottom="22dp"
+        android:layout_above="@+id/emailAddress"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/country_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="261dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordRegister"
+        android:hint="@string/password_hint"
+        android:textSize="22sp"
+        android:layout_marginBottom="15dp"
+        tools:ignore="LabelFor"
+        android:layout_above="@+id/countryName"
+        android:layout_alignStart="@+id/emailAddress" />
+
+    <Button
+        android:text="@string/set_countryState"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="92dp"
+        android:id="@+id/buttonCountryState"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView4" />
+</RelativeLayout>

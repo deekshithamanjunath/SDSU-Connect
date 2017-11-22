@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">SDSU Connect</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="password_login">------------</string>
+    <string name="login_label">Login</string>
+    <string name="register_sign_up_label">Register/Sign Up</string>
+    <string name="email_login">Enter your E-mail Address</string>
+    <string name="set_countryState">Set</string>
+    <string name="set_city">Set</string>
+    <string name="city_label">City</string>
+    <string name="country_label">Country</string>
+    <string name="e_mail_label">E-mail</string>
+    <string name="nickname_label">Nickname</string>
+    <string name="password_label">Password</string>
+    <string name="register">Register</string>
+    <string name="state_label">State</string>
+    <string name="year_label">Year</string>
+    <string name="city_info">City</string>
+    <string name="state_info">State</string>
+    <string name="country_info">Country</string>
+    <string name="nickname_info">Nickname</string>
+    <string name="year_info">Year</string>
+    <string name="e_mail_info">E-mail</string>
+    <string name="password_info">Password</string>
+    <string name="nickname_hint">Nickname</string>
+    <string name="password_hint">----------</string>
+    <string name="year_hint">Year</string>
+    <string name="city_hint">City</string>
+    <string name="country_hint">Country</string>
+    <string name="state_hint">State</string>
+    <string name="email_hint">abcd@gmail.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="filter_options">Filter</string>
+    <string name="country_filter">Country</string>
+    <string name="set_filter_country">Set</string>
+    <string name="joining_year_filter">Joining Year</string>
+    <string name="state_filter">State</string>
+    <string name="set_filter_state">Set</string>
+    <string name="done_filter">Done</string>
+    <string name="chat_menu">Chat</string>
+    <string name="logout_menu">Logout</string>
+    <string name="refresh_menu">Refresh</string>
+    <string name="welcome_text">Welcome to SDSU Connect!</string>
+    <string name="refresh_listView">Refresh</string>
+    <string name="refresh_MapView">Refresh</string>
+    <string name="send">Send</string>
+    <string name="message_hint">Message</string>
+</resources>

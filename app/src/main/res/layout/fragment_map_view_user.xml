@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.deekshithamanjunath.assignment5.MapViewUserFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapUsers"
+        android:layout_below="@+id/buttonMapViewRefresh" />
+
+    <Button
+        android:text="@string/refresh_MapView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:id="@+id/buttonMapViewRefresh"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Load More"
+        android:textColor="#0000FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/buttonMapViewRefresh"
+        android:layout_marginEnd="24dp"
+        android:id="@+id/buttonMapViewLoadMore" />
+</RelativeLayout>
